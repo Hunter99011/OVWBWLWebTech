@@ -1,0 +1,24 @@
+Legfontosabb git parancsok
+
+git clone URL
+A git clone parancs segítségével klónozhatunk egy távoli repositoryt a saját lokális repositorynkba.
+
+git status
+A git status parancs segítségével megnézhetjük, hogy eddig milyen fájlok/mappák vannak a git "színpadra" (stage-re) helyezve, illetve melyek nincsenek.
+Pirossal láthatóak a még nem a stage-re helyezett fájlok/mappák, zölddel pedig a már stage-re helyezett, commitra váró fájlok/mappák.
+
+git add .
+A git add segítségével adhatunk hozzá a stage-hez fájlokat illetve mappákat. A . karakterrel az összes fájlt hozzáadhatjuk a stage-hez. Ha külön csak egy fájlt vagy mappát szeretnénk hozzáadni, akkor arra idézőjelek között hivatkozhatunk.
+
+git commit -m "COMMIT MESSAGE"
+A git commit segítségével committolhatjuk el a stage-re helyezett fájlokat, a -m kapcsoló után idézőjelekben adhatjuk meg a commit üzenetét.
+
+git push
+A git push segítségével pusholhatjuk fel a távoli repositoryba a lokális repositoryból a már committolt fájlokat.
+
+git log
+A git loggal nézhetjük meg az előző committokat.
+
+
+git pull
+git sync
