@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        box-shadow: 0 0 10px 0 #000;
+        width: 450px;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(142, 255, 255);
+        margin-bottom: 25px;
+    }
+
+    .container2 {
+        width: 500px;
+        height: 300px;
+    }
+
+    .container2 p {
+        float: right;
+        font-size: 15px;
+        line-height: 1px;
+    }
+    
+    hr {
+        width: 510px;
+        float: left;
+    }
+
+    .block {
+        margin-top: 10px;
+    }
+
+    .slider {
+        width: 275px;
+    }
+
+    .submit {
+        margin-top: 50px;
+    }
+
+    .submitbutton {
+        margin-right: 15px;
+    }
+</style>
+<body>
+    <h3>HTML5 űrlap - OVWBWL</h3>
+    <section class="container">
+        <form action="" name="myform">
+            <div class="block">
+                <label>Név:</label>
+                <input type="text" class="nameinput" required autofocus autocomplete="off" pattern="a-zA-ZőüóőúéáűíÖÜÓÚÉÁŰÍ]{5,50}" placeholder="Írd be a neved"/>
+            </div>
+            <div class="block">
+                <label>PIN kód</label>
+                <input type="text" class="pininput" required pattern="[0-9]{4}" autocomplete="off" placeholder="Írd be a PIN kódod"/>
+            </div>
+            <div class="block">
+                <label>Kedvenc gyümölcs</label>
+                <input type="datalist" class="fruitinput" list="gyumolcsok"/>
+
+                <datalist id="gyumolcsok">
+                    <option value="dinnye"></option>
+                    <option value="banán"></option>
+                    <option value="ananász"></option>
+                    <option value="eper"></option>
+                    <option value="alma"></option>
+                </datalist>
+            </div>
+            <div class="block">
+                <label>Életkor</label>
+                <input type="number" size="2" class="ageinput" min="10" max="80"/>
+            </div>
+            <div class="block">
+                <label>Lábméret</label>
+                <input type="number" size="5" class="feetinput" min="25" max="50" step="0.5"/>
+            </div>
+            <div class="block">
+                <label>Önbizalom&nbsp;&nbsp;</label>
+                <label>0</label>
+                <input type="range" min="0" max="100" value="0" step="0.5" class="slider" class="rangeinput">
+                <label>100</label>
+            </div>
+        </form>
+
+        <div class="submit">
+            <button class="submitbutton" type="submit" form="form1" value="Submit">ELKÜLDÖM</button>
+            <button class="submitwithoutverification" type="submit" form="form1" value="Submit">Elküldöm ellenőrzés nélkül</button>
+        </div>
+    </section>
+    <hr>
+    <div class="container2">
+        <p>Forrás: <a href="http://html5doctor.com/html5-forms-introduction-and-new-attributes">http://html5doctor.com/html5-forms-introduction-and-new-attributes</a></p>
+        <p>Formátumok: <a href="http://html5pattern.com">http://html5pattern.com</a></p>
+        <p>JavaScript REGEXP: <a href="http://www.w3schools.com/js/js_regexp.asp">http://www.w3schools.com/js/js_regexp.asp</a></p>
+    </div>
+</body>
+
+</html>
