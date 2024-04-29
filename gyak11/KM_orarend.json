@@ -1,0 +1,32 @@
+{
+    "KM_Orarend" : {
+        "cim" : {
+            "street" : "Egyetemváros",
+            "city" : "Miskolc", 
+            "code" : "1021"
+        },
+        "phone number" : [
+            {
+                "type" : "Vezetékes:",
+                "number" : "0646 555-123"
+            },
+            {
+                "type" : "Mobil:",
+                "number" : "0670 555-4567"
+            }
+        ],
+        "kurzus" : [
+            {
+                "kurzusnev" : "Web technológia alapjai",
+                "idopont" : {
+                    "nap" : "hétfő",
+                    "tol" : 8,
+                    "ig" : 10
+                },
+                "helyszin" : "X A1 II. em. 218",
+                "oktato" : "Agárdi Anita",
+                "szak" : "MI"
+            }
+        ]
+    }
+}
