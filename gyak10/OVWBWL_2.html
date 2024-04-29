@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <style>
     .imagedots {
         margin-top: -10px;
         letter-spacing: 3px;
+        margin-left: 10px;
     }   
     #animationBox {
+        margin-top: 20px;
+    }
+
+    .imagetext {
+        padding: 10px;
+    }
+    input {
+        margin-top: 15px;
+    }
+
+    .applybutton {
         margin-top: 20px;
     }
 </style>
@@ -20,10 +33,21 @@
     <button id="HTMLCodeButton"><b>HTML Kód</b></button>
     <button id="ValueButton"><b>Érték</b></button>
     <button id="ParamtereButton"><b>Paraméter</b></button>
-    <div id="animationBox" style="background:#32974c;height:150px;width:150px;font-size: 12pt;position: absolute;">
-        <p><b>ME Geik PTI</b></p>
-        <p class="imagedots" style="font-size: 30px;"><b>.....</b></p>
+    <div id="animationBox" style="background:#32974c;height:150px;width:150px;font-size: 12pt;">
+        <p class="imagetext"><b>ME Geik PTI</b></p>
+        <p class="imagedots" style="font-size: 30px; width: 100%;"><b>.....</b></p>
     </div>
+    <div class="container" style="width: 100%;">
+        <label for="">Név:</label>
+        <input class="nameinput" type="text"><br>
+        <label for="">E-mail:</label>
+        <input type="text"><br>
+        <label for="">Jelszó:</label>
+        <input type="text">
+    </div>
+    <button class="applybutton">Jelentkezés</button>
+    <br>
+    <p><b>Forrás:</b> <a href="https://www.tutorialspoint.com/jquery/index.htm">https://www.tutorialspoint.com/jquery/index.htm</a></p>
     <script src="OVWBWL_2.js"></script>
 </body>
 </html>
