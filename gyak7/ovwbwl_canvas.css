@@ -1,0 +1,6 @@
+.myCanvas {
+    float: left;
+    width: 700px;
+    height: 350px;
+    border: 1px solid black;
+}
